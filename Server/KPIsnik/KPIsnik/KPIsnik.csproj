@@ -5,7 +5,21 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Core\Services\ExamServices" />
+      <Folder Include="Core\Services\FinancialServices" />
+      <Folder Include="Core\Services\GroupServices" />
+      <Folder Include="Core\Services\LessonServices" />
+      <Folder Include="Core\Services\MarkServices" />
+      <Folder Include="Core\Services\UserServices" />
+      <Folder Include="Domain\Entity" />
+      <Folder Include="Domain\EntityConfiguration" />
+      <Folder Include="Infrastructure\Controllers" />
+      <Folder Include="Infrastructure\DTO" />
+      <Folder Include="Infrastructure\Util" />
     </ItemGroup>
 
 </Project>
