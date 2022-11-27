@@ -18,6 +18,6 @@ namespace KPIsnik.Infrastructure.Controllers
         }
 
         [HttpGet("GetExams")]
-        public async Task<List<ExamDTO>> GetExams(string id) => _examService.GetExams(id);
+        public async Task<List<ExamDTO>> GetExams(string groupId) => _examService.GetExams(groupId);
     }
 }

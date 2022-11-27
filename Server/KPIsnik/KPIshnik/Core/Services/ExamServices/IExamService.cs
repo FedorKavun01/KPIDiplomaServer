@@ -5,6 +5,6 @@ namespace KPIsnik.Core.Services.ExamServices
 {
     public interface IExamService
     {
-        public List<ExamDTO> GetExams(string id);
+        public List<ExamDTO> GetExams(string groupId);
     }
 }

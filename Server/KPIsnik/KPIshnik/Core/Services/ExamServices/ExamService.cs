@@ -15,9 +15,9 @@ namespace KPIsnik.Core.Services.ExamServices
             _context = context;
         }
 
-        public List<ExamDTO> GetExams(string id)
+        public List<ExamDTO> GetExams(string groupId)
         {
-            var exams = _context.Exams.ToList().FindAll(exam => exam.groupid == Guid.Parse(id)).ToList();
+            var exams = _context.Exams.ToList().FindAll(exam => exam.groupid == Guid.Parse(groupId)).ToList();
 
             var examsDTO = exams.Select(exam =>
                 new ExamDTO()
