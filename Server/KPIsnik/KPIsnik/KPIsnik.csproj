@@ -5,6 +5,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Npgsql" Version="5.0.7" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.7" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     </ItemGroup>
 
@@ -15,7 +17,6 @@
       <Folder Include="Core\Services\LessonServices" />
       <Folder Include="Core\Services\MarkServices" />
       <Folder Include="Core\Services\UserServices" />
-      <Folder Include="Domain\Entity" />
       <Folder Include="Domain\EntityConfiguration" />
       <Folder Include="Infrastructure\Controllers" />
       <Folder Include="Infrastructure\DTO" />
