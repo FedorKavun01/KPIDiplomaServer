@@ -4,11 +4,11 @@ namespace KPIsnik.Domain.Entity
 {
     public class User
     {
-        public Guid ID { get; set; }
-        public Guid GroupID { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
+        public Guid id { get; set; }
+        public Guid groupid { get; set; }
+        public string firstname { get; set; }
+        public string lastname { get; set; }
+        public string login { get; set; }
+        public string password { get; set; }
     }
 }
