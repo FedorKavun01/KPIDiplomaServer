@@ -13,7 +13,6 @@
 
     <ItemGroup>
       <Folder Include="Core\Services\FinancialServices" />
-      <Folder Include="Core\Services\MarkServices" />
       <Folder Include="Domain\EntityConfiguration" />
       <Folder Include="Infrastructure\Util" />
     </ItemGroup>

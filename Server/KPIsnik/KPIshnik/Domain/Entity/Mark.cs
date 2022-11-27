@@ -4,10 +4,10 @@ namespace KPIsnik.Domain.Entity
 {
     public class Mark
     {
-        public Guid ID { get; set; }
-        public Guid StudentID { get; set; }
-        public string Name { get; set; }
-        public int Grade { get; set; }
-        public string Teacher { get; set; }
+        public Guid id { get; set; }
+        public Guid studentid { get; set; }
+        public string name { get; set; }
+        public int mark { get; set; }
+        public string teacher { get; set; }
     }
 }

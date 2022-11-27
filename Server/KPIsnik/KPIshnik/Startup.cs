@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using KPIsnik.Core.Services.ExamServices;
 using KPIsnik.Core.Services.GroupServices;
 using KPIsnik.Core.Services.LessonServices;
+using KPIsnik.Core.Services.MarkServices;
 using KPIsnik.Core.Services.UserServices;
 using KPIsnik.Infrastructure;
 using Microsoft.AspNetCore.Builder;
@@ -45,6 +46,7 @@ namespace KPIsnik
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IExamService, ExamService>();
             services.AddTransient<ILessonService, LessonService>();
+            services.AddTransient<IMarkService, MarkService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
