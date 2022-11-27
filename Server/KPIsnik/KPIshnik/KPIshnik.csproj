@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Core\Services\ExamServices" />
       <Folder Include="Core\Services\FinancialServices" />
       <Folder Include="Core\Services\LessonServices" />
       <Folder Include="Core\Services\MarkServices" />
