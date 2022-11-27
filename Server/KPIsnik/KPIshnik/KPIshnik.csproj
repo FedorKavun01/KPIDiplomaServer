@@ -16,7 +16,6 @@
       <Folder Include="Core\Services\FinancialServices" />
       <Folder Include="Core\Services\LessonServices" />
       <Folder Include="Core\Services\MarkServices" />
-      <Folder Include="Core\Services\UserServices" />
       <Folder Include="Domain\EntityConfiguration" />
       <Folder Include="Infrastructure\Util" />
     </ItemGroup>

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using KPIsnik.Core.Services.GroupServices;
+using KPIsnik.Core.Services.UserServices;
 using KPIsnik.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -39,6 +40,7 @@ namespace KPIsnik
             
             services.AddTransient<HttpClient>();
             services.AddTransient<IGroupService, GroupService>();
+            services.AddTransient<IUserService, UserService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
