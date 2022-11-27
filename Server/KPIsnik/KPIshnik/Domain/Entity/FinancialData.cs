@@ -4,9 +4,9 @@ namespace KPIsnik.Domain.Entity
 {
     public class FinancialData
     {
-        public Guid ID { get; set; }
-        public Guid StudentID { get; set; }
-        public bool IsContract { get; set; }
-        public int? DebtAmount { get; set; }
+        public Guid id { get; set; }
+        public Guid studentid { get; set; }
+        public bool iscontract { get; set; }
+        public int? debtamount { get; set; }
     }
 }
