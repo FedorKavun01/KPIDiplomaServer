@@ -36,5 +36,28 @@ namespace KPIsnik.Core.Services.UserServices
 
             return userDTO;
         }
+
+        public UserDTO SignIn(SignInEntityDTO entity)
+        {
+            var user = _context.Users.ToList()
+                .Find(user => user.login == entity.login && user.password == entity.password);
+
+            if (user == null)
+            {
+                throw new BadHttpRequestException("Incorrect credentials");
+            }
+
+            var userDTO = new UserDTO
+            {
+                ID = user.id,
+                GroupID = user.groupid,
+                FirstName = user.firstname,
+                LastName = user.lastname,
+                Login = user.login,
+                Password = user.password
+            };
+
+            return userDTO;
+        }
     }
 }

@@ -18,5 +18,8 @@ namespace KPIsnik.Infrastructure.Controllers
 
         [HttpGet("GetUser")]
         public async Task<UserDTO> GetGroup(string id) => _userService.GetUser(id);
+
+        [HttpPost("SignIn")]
+        public async Task<UserDTO> SignIn(SignInEntityDTO dto) => _userService.SignIn(dto);
     }
 }

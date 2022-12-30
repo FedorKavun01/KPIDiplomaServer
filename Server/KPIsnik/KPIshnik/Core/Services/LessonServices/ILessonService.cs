@@ -7,6 +7,6 @@ namespace KPIsnik.Core.Services.LessonServices
     {
         public LessonDTO GetLesson(string id);
         public LessonDTO GetCurrentLesson(string groupId);
-        public List<LessonDTO> GetLessons(string groupId);
+        public List<ScheduleDayDTO> GetLessons(string groupId);
     }
 }

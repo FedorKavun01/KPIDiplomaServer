@@ -24,6 +24,6 @@ namespace KPIsnik.Infrastructure.Controllers
         public async Task<LessonDTO> GetCurrentLesson(string groupId) => _lessonService.GetCurrentLesson(groupId);
         
         [HttpGet("GetLessons")]
-        public async Task<List<LessonDTO>> GetLessons(string groupId) => _lessonService.GetLessons(groupId);
+        public async Task<List<ScheduleDayDTO>> GetLessons(string groupId) => _lessonService.GetLessons(groupId);
     }
 }
